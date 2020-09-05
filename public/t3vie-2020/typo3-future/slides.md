@@ -20,6 +20,8 @@
 
 ![TYPO3 Team structure](https://typo3.org/fileadmin/t3o_common_storage/images/community/teams_team-members/Core_Development_Structure.png)
 
+Note: There are reasons but: hierarchical/waterfall, no shared responsibility, complicated
+
 
 
 ![Perception vs reality](assets/perception-reality.jpeg)
@@ -29,6 +31,8 @@
 ## Developing things right
 
 - "We" are pretty good at it
+
+Note: Testing, CGL, Architecture
 
 
 
@@ -46,7 +50,7 @@
 
 <div class="tweet" data-src="https://twitter.com/nke_ise/status/897756900753891328" data-size="1"></div>
 
-Note: Apple Health: cycle tracking, accessible software 
+Note: TYPO3 Shortcomings Examples: Security, Accessibility, Performance (e.g. Page Tree) 
 
 
 
@@ -63,7 +67,12 @@ Note: Apple Health: cycle tracking, accessible software
 - Documentation
 - Mentoring
 - Discussions and Decisions
-- Be open, be respectful, listen
+- Be open, be inclusive, be respectful, listen
+- 6 eyes merge rule is not enough for diverse perspectives
+
+
+
+## Not everything is bad
 
 
 
@@ -112,6 +121,7 @@ Note: Apple Health: cycle tracking, accessible software
 
 ## Approaching these limitations
 
+- Recognition
 - Initiative
 - Gathering view points
 - Discussion
