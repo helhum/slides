@@ -53,11 +53,4 @@
         </ul>
     </header>
 </div>
-
-<?php
-function renderPartial(string $name): string {
-    ob_start();
-    include __DIR__ . '/_' . $name . '.html.php';
-    return ob_get_clean();
-}
-?>
+<?php require_once __DIR__ . '/../_utils/functions.php' ?>
