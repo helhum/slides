@@ -1,13 +1,10 @@
 <?php include __DIR__ . '/_controller/todo.php' ?>
 <?php include __DIR__ . '/_partials/_header.html.php' ?>
+
 <div class="container">
-    <h1>Streams</h1>
-    <p class="lead">
-        The inevitable todo list example
-    </p>
-    <?= renderPartial('todo/list') ?>
+    <h1>Create new todo</h1>
     <turbo-frame id="new-todo">
-        <?= renderPartial('todo/action-form') ?>
+        <?= renderPartial('todo/item-form') ?>
     </turbo-frame>
 </div>
 

@@ -45,7 +45,7 @@
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/t3see-2022-01/topwire/demo/index.php?context=home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/t3see-2022-01/topwire/demo/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="/t3see-2022-01/topwire/demo/drive.php?context=drive" class="nav-link">Turbo Drive</a></li>
             <li class="nav-item"><a href="/t3see-2022-01/topwire/demo/frames.php?context=frames" class="nav-link">Turbo Frames</a></li>
             <li class="nav-item"><a href="/t3see-2022-01/topwire/demo/streams.php?context=streams" class="nav-link">Turbo Streams</a></li>
