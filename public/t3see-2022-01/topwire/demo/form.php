@@ -2,7 +2,7 @@
 
 <div class="container">
     <h1>Contact form</h1>
-    <?php echo renderPartial('form') ?>
+    <?= renderPartial('form') ?>
 </div>
 
 

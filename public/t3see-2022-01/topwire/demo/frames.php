@@ -82,7 +82,7 @@ if (!empty($_POST['invalidCheck'])) {
         <div class="card-body">
             <turbo-frame id="contact-form">
                 <h5>Contact form</h5>
-                <?php echo renderPartial('form') ?>
+                <?= renderPartial('form') ?>
             </turbo-frame>
         </div>
     </div>
