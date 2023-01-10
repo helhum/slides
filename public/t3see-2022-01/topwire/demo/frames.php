@@ -12,7 +12,7 @@ if (!empty($_POST['invalidCheck'])) {
 <?php include __DIR__ . '/_partials/_header.html.php' ?>
 
 <div class="container">
-    <h1>Frames</h1>
+    <h1>Turbo Frames</h1>
     <p class="lead">
         Example how frames work
     </p>

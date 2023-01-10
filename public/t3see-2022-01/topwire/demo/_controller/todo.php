@@ -3,13 +3,13 @@ require_once __DIR__ . '/../_utils/functions.php';
 session_start();
 $_SESSION['todos'] = $_SESSION['todos'] ?? [
         'make coffee',
-        'fix TYPO3',
+        'improve TYPO3',
         'clean room',
     ];
 
 if (($_POST['action'] ?? null) === 'flush') {
     $_SESSION['todos'] = [
-        'fix TYPO3',
+        'improve TYPO3',
     ];
     $GLOBALS['todos'] = $_SESSION['todos'];
     if (!str_contains($_SERVER['HTTP_ACCEPT'], 'text/vnd.turbo-stream.html')) {
