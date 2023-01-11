@@ -6,7 +6,9 @@
 
 
 
-![Building the right thing](http://www.querbilder.de/cartoons/189_hellseher_glaskugel.gif)
+![Building the right thing](assets/189_hellseher_glaskugel.gif)
+
+[image source: Querbilder](http://www.querbilder.de/cartoons/189_hellseher_glaskugel.gif)
 
 
 
