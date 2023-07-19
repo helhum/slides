@@ -17,6 +17,7 @@ if (($_POST['action'] ?? null) === 'flush') {
     } else {
         header('Content-Type: text/vnd.turbo-stream.html; charset=utf-8');
         echo renderPartial('todo/flush-items-stream');
+        die;
     }
 }
 
@@ -27,6 +28,7 @@ if (!empty($_POST['new-todo']) && is_string($_POST['new-todo'])) {
     } else {
         header('Content-Type: text/vnd.turbo-stream.html; charset=utf-8');
         echo renderPartial('todo/new-item-stream', ['item' => $_POST['new-todo']]);
+        die;
     }
 }
 $GLOBALS['todos'] = $_SESSION['todos'];
