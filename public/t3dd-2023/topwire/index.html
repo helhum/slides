@@ -23,6 +23,7 @@
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="../../reveal/plugin/highlight/monokai.css" id="highlight-theme">
     <link rel="stylesheet" href="./assets/panda.css" >
+    <link rel="stylesheet" href="./assets/hearts.css" >
 </head>
 <body>
 <div class="reveal">
@@ -38,9 +39,11 @@
 <script src="../../reveal/plugin/embed-tweet/embed-tweet.js"></script>
 <script type="module">
     import PandaController from "./assets/panda-controller.js"
+    import HeartsController from "./assets/hearts-controller.js"
     import {Application} from "./assets/stimulus.js";
     const application = Application.start()
     application.register('panda', PandaController)
+    application.register('hearts', HeartsController)
 </script>
 <script>
     // More info about initialization & config:
