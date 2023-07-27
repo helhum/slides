@@ -21,11 +21,11 @@ export default class extends Controller {
     }
 
     connect() {
-        document.addEventListener('love', this.showHearts)
+        this.element.addEventListener('love', this.showHearts, {capture: true})
     }
 
     disconnect() {
-        document.removeEventListener('love', this.showHearts)
+        this.element.removeEventListener('love', this.showHearts)
     }
 
     observeHearts(entries) {
@@ -37,7 +37,7 @@ export default class extends Controller {
         })
     }
 
-    showHearts() {
+    showHearts(event) {
         this.addRandomHearts()
         const love = setInterval(() => {
             this.addRandomHearts()
@@ -50,11 +50,11 @@ export default class extends Controller {
         const size = Math.floor(base * 65) + 10
         const duration = Math.floor((1 - base) * 5) + 5
         const offsetLeft = Math.floor(Math.random() * 100) + 1
-        const additionalOffsetLeft = Math.floor(Math.random() * 40) + 1
+        const additionalOffsetLeft = Math.floor(Math.random() * 80) - 39
         const color = Math.floor(Math.random() * 25) + 100
 
         this.createHeart({size, color, offsetLeft, duration});
-        this.createHeart({size: size - 10, color, offsetLeft: offsetLeft + additionalOffsetLeft, duration: duration + 2, blueOffset: 25});
+        this.createHeart({size: size - 10, color, offsetLeft: Math.max(Math.min(offsetLeft + additionalOffsetLeft, 100), 0), duration: duration + 2, blueOffset: 25});
     }
 
     createHeart({size, offsetLeft, duration, color, blueOffset = 0}) {
@@ -62,13 +62,14 @@ export default class extends Controller {
             <div 
                 class="heart"
                 data-hearts-target="heart" 
-                style="width:${size}px;
+                style="z-index: 1;
+                    width:${size}px;
                     height:${size}px;
                     left:${offsetLeft}%;
                     background:rgba(255,${color - 25},${color + blueOffset},1);
                     animation:love ${duration}s ease">
             </div>`
         this.heartsObserver.observe(heart)
-        this.element.append(heart)
+        document.body.append(heart)
     }
 }

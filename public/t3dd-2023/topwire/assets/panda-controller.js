@@ -26,7 +26,7 @@ export default class extends Controller {
             this.element.classList.remove('Wave')
             this.bellyTarget.addEventListener('click', () => this.waveHello(), {once: true})
         }, 1600)
-        document.dispatchEvent(new Event('love'))
+        this.element.dispatchEvent(new Event('love'))
     }
 
     sayHi() {

@@ -57,11 +57,12 @@ Dynamic and interactive TYPO3 websites, without having to write JavaScript
 
 
 
-
 ## Availability
 
 Soon! (2023)
 
 
 
-### Thank You
+<div data-controller="hearts">
+<h1 onclick="this.dispatchEvent(new Event('love'))">Thank You</h1>
+</div>
