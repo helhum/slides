@@ -33,7 +33,18 @@ Dynamic and interactive TYPO3 websites, without having to write JavaScript
 
 
 
+## Helmut Hummel
+@helhum@chaos.social
+
+
+
+<!-- .element: data-background-image="assets/pexels-jimmy-teoh-951531.jpg" -->
 ## History
+
+
+
+## Web 1.0
+![Netscape Screenshot](assets/3180-Netscape_Navigator_2_Screenshot.png)
 
 
 ## Static HTML
@@ -48,21 +59,239 @@ Dynamic and interactive TYPO3 websites, without having to write JavaScript
 ## Server side processing and rendering (CGI)
 
 ```html
-<form action="http://www.my-website.com/cgi/form-submit.pl">
-    <input type="text" />
+<form action="http://www.my-website.com/cgi/guest-book.pl">
+    <input type="text" name="name" />
+    <textarea name="message"></textarea>
     <input type="submit" name="Submit" />
 </form>
 ```
 
 
 
+## Web 2.0
+![Gmail Screenshot](assets/Screen-Shot-2011-11-01-at-9.webp)
+
+
+## jQuery / Ajax
+
+```js
+$.ajax({
+  url: "test.html",
+  context: document.body
+}).done(function() {
+  $( this ).addClass( "done" );
+});
+```
+
+
+<!-- .element: data-background-image="assets/jquerycode.png" -->
+
+
+
+
+<!-- .element: data-background-image="assets/1504707585create-react-app_feature.webp" -->
+<h2 style="color: white; text-shadow: 5px 5px 10px rgba(0,0,0,.8);">Angular / React / Vue</h2>
+
+
+## Where is my HTML?
+
+```html
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;title&#x3E;Angular / React / Vue App&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+    &#x3C;div id=&#x22;app&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;script src=&#x22;/my-app.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+```
+
+
+## Ah, here it is
+
+![Gmail Screenshot](assets/BundleSize.png)
+
+
+## Client side rendering with JavaScript
+
+* Huge JS bundles
+* Complex code splitting
+* Bad for SEO
+* Can easily become complex and slow
+
+
+
+
+<!-- .element: data-background-image="assets/pexels-rahul-pandit-2086748.jpg" -->
+<h2 style="color: white">Dawn of a new Era</h2>
+
+
+## Server side HTML rendering
+
+
+## Wait, what?
+
+
+## Full Stack JS Application Frameworks
+* Next
+* Nuxt
+* Remix
+* Astro
+* Quik
+* ...
+
+
+## Benefits
+* SEO
+* Performance
+* One code base (client/server)
+* Elaborate ecosystem
+
+
+## Challenges
+* JavaScript server
+* Non trivial CMS integration
+* Complex setup/deployment
+
+
+
+# TYPO3
+
+
+## TYPO3 comes with
+* Server side HTML rendering
+* Decent performance
+* SEO out of the box
+* Application Framework
+* CMS (of course)
+
+
+## TYPO3 misses
+* Client side interactivity
+
+
+
+<!-- .element: data-background-image="assets/pexels-kei-scampa-2370726.jpg" -->
+<h2 style="color: white; text-shadow: 5px 5px 10px rgba(0,0,0,.8);">A Secret Ingredient</h2>
+
+
+## Hotwire Turbo
+* Include one small JS library
+* No additional JS
+* Keep your server rendered HTML
+* Define islands of interactivity in your HTML
+
+
+## Before
+```html
+<a href="http://www.my-website.com/some-resource.html">
+    Click Me
+</a>
+<form action="http://www.my-website.com/cgi/guest-book.pl">
+    <input type="text" name="name" />
+    <textarea name="message"></textarea>
+    <input type="submit" name="Submit" />
+</form>
+```
+
+
+## After
+```html
+<turbo-frame id="t3dd23-example">
+    <a href="http://www.my-website.com/some-resource.html">
+        Click Me
+    </a>
+    <form action="http://www.my-website.com/cgi/guest-book.pl">
+        <input type="text" name="name" />
+        <textarea name="message"></textarea>
+        <input type="submit" name="Submit" />
+    </form>
+</turbo-frame>
+```
+
+
+## Hotwire Turbo
+* Link clicks and form submits are captured
+* URL/ Form Action is fetched via Ajax
+* Contents of the frame is replaced from the response
+
+
+
+<!-- .element: data-background-image="assets/pexels-joshua-welch-1624600.jpg" -->
+<h1 style="color: white; text-shadow: 5px 5px 10px rgba(0,0,0,.8);">Topwire</h1>
+
+
+## TYPO3 ❤️ Hotwire = Topwire
+
+
+## See it in action
+(https://towire.dev)
+
+
+
+## Topwire tutorial
+* Write code that works server side
+* Sprinkle HTML with some additional tags
+* Profit
+
+
+## Easily accessible
+* No JavaScript required
+* Great results with little effort
+
+
+## Progressive enhancement
+* Works without JavaScript enabled
+* Implement server side, improve UX with Topwire
+
+
+## Batteries included
+* Solutions over tooling
+* Clean TYPO3 integration 
+
+
+
+## Outlook / Demo
+
+
+
+
+<!-- .element: data-background-image="assets/pexels-benjamin-suter-3617500.jpg" -->
+<h1 style="color: white; text-shadow: 5px 5px 10px rgba(0,0,0,.8);">Great UX</h1>
+
+
+
+# Topwire
+
+## More fun, less work
+
+
 
 ## Availability
 
-Soon! (2023)
+Soon!
+
+
+## Available
+
+Now!
+
+https://github.com/topwire/topwire/
+
+
+
+## Questions?
 
 
 
 <div data-controller="hearts">
 <h1 onclick="this.dispatchEvent(new Event('love'))">Thank You</h1>
+<p>Helmut Hummel</p>
+<p>@helhum@chaos.social</p>
 </div>
+
+
+
+## Johann Hummel ✝︎
+In loving memory
