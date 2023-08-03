@@ -287,6 +287,7 @@ https://github.com/topwire/topwire/
 
 <div data-controller="hearts">
 <h1 onclick="this.dispatchEvent(new Event('love'))">Thank You</h1>
+<p><a href="https://slides.helhum.io/t3dd-2023/topwire/">https://slides.helhum.io/t3dd-2023/topwire/</a></p>
 <p>Helmut Hummel</p>
 <p>@helhum@chaos.social</p>
 </div>
