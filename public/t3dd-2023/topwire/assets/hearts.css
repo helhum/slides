@@ -39,5 +39,7 @@
 }
 
 @keyframes love {
-    0%{top:110%}
+    0% {
+        top:110%
+    }
 }
