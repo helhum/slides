@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Creating server rendered interactive websites with TYPO3</title>
+
+    <link rel="stylesheet" href="../../reveal/dist/reset.css">
+    <link rel="stylesheet" href="../../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../../reveal/dist/theme/solarized.css" id="theme">
+    <!--black	Black background, white text, blue links (default)-->
+    <!--white	White background, black text, blue links-->
+    <!--league	Gray background, white text, blue links-->
+    <!--beige	Beige background, dark text, brown links-->
+    <!--sky	Blue background, thin dark text, blue links-->
+    <!--night	Black background, thick white text, orange links-->
+    <!--serif	Cappuccino background, gray text, brown links-->
+    <!--simple	White background, black text, blue links-->
+    <!--solarized	Cream-colored background, dark green text, blue links-->
+    <!--blood	Dark background, thick white text, red links-->
+    <!--moon	Dark blue background, thick grey text, blue links-->
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+    <link rel="stylesheet" href="./assets/panda.css" >
+    <link rel="stylesheet" href="./assets/hearts.css" >
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown="slides.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+    </div>
+</div>
+
+<script src="../../reveal/dist/reveal.js"></script>
+<script src="../../reveal/plugin/notes/notes.js"></script>
+<script src="../../reveal/plugin/markdown/markdown.js"></script>
+<script src="../../reveal/plugin/highlight/highlight.js"></script>
+<script src="../../reveal/plugin/embed-tweet/embed-tweet.js"></script>
+<script type="module">
+    import PandaController from "./assets/panda-controller.js"
+    import HeartsController from "./assets/hearts-controller.js"
+    import {Application} from "./assets/stimulus.js";
+    const application = Application.start()
+    application.register('panda', PandaController)
+    application.register('hearts', HeartsController)
+</script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealEmbedTweet]
+    });
+</script>
+</body>
+</html>
