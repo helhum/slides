@@ -275,8 +275,8 @@ $.ajax({
 
 ## Boost your form UX without adding complexity
 
-* https://topwire.test/example/simple-form
-* https://topwire.test/example/dynamic-form
+* https://topwire.dev/example/simple-form
+* https://topwire.dev/example/dynamic-form
 
 
 
