@@ -1,0 +1,11 @@
+{
+  "packages/responsive_image/Resources/Private/JavaScript/index.js": {
+    "file": "assets/helhum/main-D0dXycc_.js",
+    "name": "helhum/main",
+    "src": "packages/responsive_image/Resources/Private/JavaScript/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-BmzIq25t.css"
+    ]
+  }
+}

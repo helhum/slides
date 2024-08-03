@@ -1,0 +1,15 @@
+.text-shadow {
+    color: white !important;
+    text-shadow: 5px 5px 10px rgba(0,0,0,.8) !important;
+}
+.mt-400 {
+    margin-top: 400px !important;
+}
+
+.mt-200 {
+    margin-top: 200px !important;
+}
+
+pre>code {
+    font-size: 0.5em !important;
+}
